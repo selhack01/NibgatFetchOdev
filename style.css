@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* html {
+    height: 100%;
+    width: 100%;
+  } */
+body {
+  height: 100%;
+  width: 100%;
+}
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: #eeded3;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.productHeader {
+  color: #a79b94;
+  font-size: 40px;
+  text-align: center;
+  padding: 40px 0px;
+  font-family: fantasy;
+}
+.productContainer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.field {
+  display: flex;
+  gap: 20px;
+  padding: 10px 20px;
+  justify-content: center;
+}
+.card {
+  display: flex;
+  width: 20%;
+  flex-direction: column;
+  background-color: #a79b94;
+  padding: 10px 15px;
+  gap: 5px;
+  border-radius: 20px;
+  border: solid 3px #fffbf8;
+}
+.card img {
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+}
+.name {
+  font-size: 20px;
+  color: #fffbf8;
+}
+.price {
+  font-size: 16px;
+  color: #fffbf8;
+}
+.card button {
+  background-color: #eeded3;
+  color: #a79b94;
+  font-family: inherit;
+  padding: 5px 20px;
+  cursor: pointer;
+  font-size: 20px;
+  border: 3px solid #fffbf8;
+  border-radius: 6px;
+  margin-top: auto;
+}
+.modal {
+  width: 35%;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  flex-direction: column;
+  z-index: 1;
+  border-radius: 20px;
+  background-color: #a79b94;
+  border: 3px solid #fffbf8;
+}
+.modal.show {
+  display: flex;
+}
+.modalHeader {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 20px;
+  justify-content: space-between;
+}
+.modalHeader button {
+  width: 25px !important;
+  height: 25px !important;
+  font-size: 10px;
+  border-radius: 50%;
+  background-color: #eeded3;
+  color: #a79b94;
+  font-family: inherit;
+  cursor: pointer;
+  border: 3px solid #fffbf8;
+}
+.modalHeader span {
+  font-size: 20px;
+  color: #eeded3;
+  font-family: inherit;
+}
+.modalContent {
+  padding: 0 20px 20px 20px;
+  display: flex;
+  gap: 10px;
+}
+.modalDiscription {
+  display: flex;
+  padding: 10px;
+  gap: 5px;
+  flex-direction: column;
+  font-size: 16px;
+  color: #eeded3;
+  width: 100%;
+}
+.modalImg img {
+  width: 250px;
+  height: 250px;
+}
+.modalDiscription textarea {
+  height: 100%;
+  padding: 5px;
+  width: 100%;
+  background-color: #eeded3;
+  color: #a79b94;
+  font-size: 12px;
+  border-radius: 10px;
+  border: solid 3px #fffbf8;
+  resize: none;
+  cursor: pointer;
+}
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 6px;
+}
